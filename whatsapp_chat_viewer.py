@@ -38,7 +38,7 @@ def parse_chat(lines):
 
 # Chat bubble styling
 def display_message(sender, message, is_user):
-    bg_color = "#dcf8c6" if is_user else "#ffffff"
+    bg_color = "#7e005c" if is_user else "#00247e"
     align = "flex-end" if is_user else "flex-start"
     border_radius = "18px 18px 0px 18px" if is_user else "18px 18px 18px 0px"
     
@@ -46,7 +46,7 @@ def display_message(sender, message, is_user):
     <div style="display: flex; justify-content: {align}; margin-bottom: 10px;">
         <div style="
             background-color: {bg_color}; 
-            padding: 10px 15px; 
+            padding: 2px 5px; 
             border-radius: {border_radius}; 
             max-width: 70%; 
             box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
