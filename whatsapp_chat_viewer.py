@@ -44,10 +44,17 @@ def display_message(sender, message, is_user):
     
     st.markdown(f"""
     <div style="display: flex; justify-content: {align}; margin-bottom: 10px;">
-        <div style="background-color: {bg_color}; padding: 10px 15px; border-radius: {border_radius}; 
-                    max-width: 70%; box-shadow: 0 1px 3px rgba(0,0,0,0.2); white-space: pre-wrap;">
-            <span style="font-weight: bold; font-size: 13px;">{sender}</span><br>
-            <span style="font-size: 15px;">{message}</span>
+        <div style="
+            background-color: {bg_color}; 
+            padding: 10px 15px; 
+            border-radius: {border_radius}; 
+            max-width: 70%; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+            white-space: pre-wrap;
+            color: black;
+            font-size: 15px;
+        ">
+            {message}
         </div>
     </div>
     """, unsafe_allow_html=True)
