@@ -41,7 +41,7 @@ def parse_chat(lines):
 def display_message(sender, message, timestamp, is_user):
     bg_color = "#dcf8c6" if is_user else "#ffffff"
     align = "flex-end" if is_user else "flex-start"
-    border_radius = "12px 12px 0px 12px" if is_user else "12px 12px 12px 0px"
+    border_radius = "1px 1px 1px 1px" if is_user else "12px 12px 12px 0px"
     time_str = timestamp.strftime("%I:%M %p").lstrip("0")
 
     st.markdown(f"""
