@@ -45,24 +45,22 @@ def display_message(sender, message, timestamp, is_user):
     time_str = timestamp.strftime("%I:%M %p").lstrip("0")
 
     st.markdown(f"""
-    <div style="display: flex; justify-content: {align}; margin: 2px 0;">
+    <div style="display: flex; justify-content: {align}; margin: 1px 0;">
         <div style="
             background-color: {bg_color}; 
-            padding: 8px 10px 5px 10px; 
+            padding: 6px 10px 4px 10px; 
             border-radius: {border_radius}; 
             max-width: 60%; 
             box-shadow: 0 1px 1px rgba(0,0,0,0.1); 
             white-space: pre-wrap;
             color: #111;
-            font-size: 13.5px;
-            line-height: 1.4;
-            position: relative;
+            font-size: 13px;
+            line-height: 1.25;
         ">
-            <div style="margin-bottom: 4px;">{message}</div>
+            <div style="margin: 0;">{message}</div>
             <div style="
                 font-size: 10px; 
-                color: #555; 
-                position: relative;
+                color: #888; 
                 text-align: right;
                 margin-top: 2px;
             ">{time_str}</div>
