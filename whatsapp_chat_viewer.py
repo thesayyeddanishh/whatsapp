@@ -48,7 +48,7 @@ def display_message(sender, message, timestamp, is_user):
     <div style="display: flex; justify-content: {align}; margin: 1px 0;">
         <div style="
             background-color: {bg_color}; 
-            padding: 6px 10px 4px 10px; 
+            padding: 6px 1px 4px 1px; 
             border-radius: {border_radius}; 
             max-width: 60%; 
             box-shadow: 0 1px 1px rgba(0,0,0,0.1); 
